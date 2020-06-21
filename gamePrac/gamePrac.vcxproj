@@ -145,11 +145,14 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="gamePrac.h" />
     <ClInclude Include="global.h" />
+    <ClInclude Include="input_manager.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="texture_manager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamePrac.cpp" />
+    <ClCompile Include="texture_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="gamePrac.rc" />

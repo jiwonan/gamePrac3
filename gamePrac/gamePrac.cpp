@@ -17,6 +17,9 @@ HWND gWindowHandle;
 
 bool GameRunning = true;
 
+TextureManager textuerManager;
+InputManager inputManager;
+    
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
