@@ -94,7 +94,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d9.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -142,17 +142,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gamePrac.h" />
+    <ClInclude Include="game_background.h" />
+    <ClInclude Include="game_system.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="input_manager.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="player_bullet.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SDKsound.h" />
+    <ClInclude Include="SDKwavefile.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="stage_manager.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="texture_manager.h" />
+    <ClInclude Include="title_stage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamePrac.cpp" />
+    <ClCompile Include="game_background.cpp" />
+    <ClCompile Include="game_first_stage.cpp" />
+    <ClCompile Include="game_first_stage.h" />
+    <ClCompile Include="game_system.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="player_bullet.cpp" />
+    <ClCompile Include="SDKsound.cpp" />
+    <ClCompile Include="SDKwavefile.cpp" />
+    <ClCompile Include="stage_manager.cpp" />
     <ClCompile Include="texture_manager.cpp" />
+    <ClCompile Include="title_stage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="gamePrac.rc" />

@@ -14,7 +14,7 @@ void TextureManager::LoadTexture(const TCHAR* name, int id)
 
 TextureElement* TextureManager::GetTexture(const int id)
 {
-	for (int i; i < elements.size(); ++i)
+	for (int i = 0; i < elements.size(); ++i)
 	{
 		if (elements[i]->id == id)
 		{
