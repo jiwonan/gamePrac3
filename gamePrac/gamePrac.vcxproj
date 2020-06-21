@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="gamePrac.h" />
+    <ClInclude Include="global.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
